@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Profil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <button class="h1-button" onclick="showView('intro-view')">⌂</button>
+        <nav class="navbar">
+            <button class="transparent-hover" onclick="goToSection('#identitas')">Data Diri</button>
+            <button class="transparent-hover" onclick="goToSection('#pendidikan')">Pendidikan</button>
+            <button class="transparent-hover" onclick="goToSection('#skills')">Skills</button>
+            <button class="transparent-hover" onclick="goToSection('#projects')">Projects</button>
+        </nav>
+        <button id="toggleSidebar" class="sidebar-toggle-btn">☰</button>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <h2 class="sidebar-title">Profile Menu</h2>
+        <ul class="sidebar-nav">
+            <li><button class="sidebar-button" onclick="showView('intro-view')">Home</button></li>
+            <li><button class="sidebar-button" onclick="goToSection('#identitas')">About</button></li>
+            <li><button class="sidebar-button" onclick="goToSection('#projects')">Projects</button></li>
+            <li><button class="sidebar-button" onclick="goToSection('#contact')">Contact</button></li>
+        </ul>
+    </aside>
+
+    <main class="content-wrapper">
+        <div id="intro-view" class="intro view">
+            <h2 class="name">Ahmad Riyadh Almaliki</h2>
+            <p>Halo! Saya Ahmad Riyadh Almaliki mahasiswa Teknik Informatika dengan minat pada pengembangan web dan analisis data, berfokus membangun keterampilan di bidang teknologi.</p>
+            <div class="button-container">
+                <button class="cta-button" onclick="goToSection('#identitas')">Explore Now</button>
+            </div>
+        </div>
+
+        <div id="main-content-view" class="view">
+            <section id="identitas" class="content-section">
+                <h1 class="page-title">Data Diri</h1>
+                <hr class="separator">
+                <div class="identity-container">
+                    <div class="identity-photo">
+                        <img src="assets/foto.jpg" alt="Foto profil Ahmad Riyadh Almaliki">
+                    </div>
+                    <div class="identity-details-grid">
+                        <div class="info-card"><span class="detail-label">Nama</span><span class="detail-value">Ahmad Riyadh Almaliki</span></div>
+                        <div class="info-card"><span class="detail-label">Tempat/Tgl Lahir</span><span class="detail-value">Pati, 22 Maret 2006</span></div>
+                        <div class="info-card"><span class="detail-label">Minat</span><span class="detail-value">Pengembangan perangkat lunak dan web</span></div>
+                        <div class="info-card"><span class="detail-label">Tujuan Karier</span><span class="detail-value">Melanjutkan pembelajaran ke bidang yang lebih spesifik seperti game development atau data analyst</span></div>
+                        <div class="info-card"><span class="detail-label">Alamat tinggal</span><span class="detail-value">Jl Ciwaruga No.51 RT.01 RW.03</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pendidikan" class="content-section">
+                <h1 class="page-title">Riwayat Pendidikan</h1>
+                <hr class="separator">
+                <div class="card-container">
+                    <div class="info-card">
+                        <h3>SD Negeri 1 Blora</h3>
+                        <p>Lulus Tahun 2018</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>SMP Negeri 25 Tangerang</h3>
+                        <p>Lulus Tahun 2021</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>SMA Negeri 3 Tangerang</h3>
+                        <p>Lulus Tahun 2024</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="content-section">
+                <h1 class="page-title">Skills</h1>
+                <hr class="separator">
+                <div class="card-container">
+                    <div class="info-card">
+                        <h3>Project Management</h3>
+                        <p>Kemampuan dasar manajemen proyek: perencanaan tugas, penjadwalan, dan koordinasi tim, dan memantau progres tugas kelompok serta membagi pekerjaan agar selesai tepat waktu.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Dasar UI/UX</h3>
+                        <p>Dasar desain antarmuka: wireframe, pemilihan warna, dan layout sederhana (Figma, Canva).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h1 class="page-title">Project</h1>
+                <hr class="separator">
+                <div class="card-container">
+                    <div class="info-card">
+                        <img src="assets/project1.png" alt="Gambar Project 1" class="project-image">
+                        <h3>Game Towers Defence</h3>
+                        <p>Game sederhana dengan mekanik menara vs musuh. Fitur: spawn musuh, deteksi tabrakan, sistem skor.</p>
+                        <div class="project-tags">
+                            <span>C</span>
+                            <span>Raylib</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <img src="assets/project2.jpg" alt="Gambar Project 2" class="project-image">
+                        <h3>Game Super Mario Bros</h3>
+                        <p>Clone sederhana Mario dengan pergerakan karakter, platform, rintangan, dan skor.</p>
+                        <div class="project-tags">
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kursus" class="content-section">
+                <h1 class="page-title">Kursus & Pelatihan</h1>
+                <hr class="separator">
+                <div class="course-item">
+                    <div class="course-image">
+                        <img src="assets/course1.png" alt="Sertifikat Kursus Web Development">
+                    </div>
+                    <div class="course-description">
+                        <h3>HCIA - Artificial Intelligence</h3>
+                        <p><strong>Penyelenggara:</strong> Huawei Academy</p>
+                        <p>Mempelajari konsep dasar AI, machine learning, dan penerapannya di dunia nyata.</p>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="course-image">
+                        <img src="assets/course2.png" alt="Sertifikat Kursus Analisis Data">
+                    </div>
+                    <div class="course-description">
+                        <h3>Responsive Web Design</h3>
+                        <p><strong>Penyelenggara:</strong> Free Code Camp</p>
+                        <p>Mempelajari fundamental HTML, dan untuk membangun website yang statis dan responsif dari awal.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <h1 class="page-title">Hubungi Saya</h1>
+        <hr class="separator">
+        <div class="contact-info">
+            <a href="mailto:ahmadriyadh.tif24@polban.ac.id" target="_blank"><img src="assets/mail.png" alt="Email Icon" class="contact-logo"></a>
+            <a href="https://wa.me/6289501937470" target="_blank"><img src="assets/whatsapp.png" alt="WhatsApp Icon" class="contact-logo"></a>
+            <a href="https://www.instagram.com/itss.riyadh" target="_blank"><img src="assets/instagram.png" alt="Instagram Icon" class="contact-logo"></a>
+            <a href="https://www.github.com/ahmadriyadh123" target="_blank"><img src="assets/github.png" alt="Github Icon" class="contact-logo"></a>
+        </div>
+        <p class="copyright">&copy; 2025 Landing Page Responsive. All Rights Reserved.</p>
+        <img src="assets/rimuru1.png" alt="Decorative icon" class="corner-left rotate-on-click">
+        <img src="assets/rimuru2.png" alt="Decorative icon" class="corner-right rotate-on-click">
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.getElementById('sidebar');
+            const toggleSidebarButton = document.getElementById('toggleSidebar');
+
+            window.showView = function (viewId) {
+                document.querySelectorAll('.view').forEach(view => {
+                    view.style.display = 'none';
+                });
+                const activeView = document.getElementById(viewId);
+                if (activeView) {
+                    activeView.style.display = 'block';
+                }
+                if (viewId === 'intro-view') {
+                    document.querySelector('main').style.overflowX = 'hidden';
+                } else {
+                    document.querySelector('main').style.overflowX = 'scroll';
+                }
+            };
+
+            window.goToSection = function (sectionId) {
+                if (sectionId === '#contact') {
+                    const contactSection = document.querySelector(sectionId);
+                    if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    hideSidebar();
+                } else {
+                    showView('main-content-view');
+                    setTimeout(() => {
+                        const section = document.querySelector(sectionId);
+                        if (section) {
+                            section.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+                        }
+                        hideSidebar();
+                    }, 50);
+                }
+            };
+
+            function toggleSidebar(event) {
+                sidebar.classList.toggle('active');
+                event.stopPropagation();
+            }
+
+            function hideSidebar() {
+                sidebar.classList.remove('active');
+            }
+
+            toggleSidebarButton.addEventListener('click', toggleSidebar);
+
+            document.addEventListener('click', (event) => {
+                if (!sidebar.contains(event.target) && event.target !== toggleSidebarButton) {
+                    hideSidebar();
+                }
+            });
+
+            const sidebarButtons = document.querySelectorAll('.sidebar-button');
+            sidebarButtons.forEach(button => {
+                button.addEventListener('click', hideSidebar);
+            });
+
+            showView('intro-view');
+        });
+    </script>
+</body>
+</html>
