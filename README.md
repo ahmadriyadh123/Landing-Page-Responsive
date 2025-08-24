@@ -2,6 +2,8 @@
 
 Proyek web berupa **Curriculum Vitae (CV) digital**. Website ini menampilkan profil, riwayat pendidikan, keterampilan, proyek, serta informasi kontak, dengan tampilan sederhana dan **responsif** untuk berbagai perangkat.
 
+Link Deploy: https://ahmadriyadh123.github.io/Landing-Page-Responsive/
+
 ## Fitur
 
 - **Navigasi antar halaman**: Home, Identitas Diri, Riwayat Pendidikan, Kemampuan & Keterampilan, Kontak.
